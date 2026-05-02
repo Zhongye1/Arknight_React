@@ -12,7 +12,7 @@ import { directions } from '../../components/store/lineDecoratorStore'
 
 // -scss
 
-import '../../styles/operator-base.less'
+import '../../styles/operator-base.scss'
 
 export default function Operator() {
   const $viewIndex = useStore(viewIndex)

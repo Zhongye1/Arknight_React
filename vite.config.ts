@@ -21,9 +21,7 @@ export default defineConfig({
   },
   css: {
     preprocessorOptions: {
-      less: {
-        javascriptEnabled: true,
-      },
+      scss: {},
     },
   },
   server: {
