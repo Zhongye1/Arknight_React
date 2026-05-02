@@ -3,10 +3,7 @@
     "module": "esnext",
     "useDefineForClassFields": true,
     "target": "ESNext",
-    "lib": [
-      "esnext",
-      "dom"
-    ],
+    "lib": ["esnext", "dom"],
     "allowJs": true,
     "strict": true,
     "noImplicitAny": true,
@@ -26,16 +23,9 @@
     "jsx": "react-jsx",
     "moduleResolution": "node",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "src/*": [
-        "./src/*"
-      ]
-    },
+      "@/*": ["./src/*"],
+      "src/*": ["./src/*"]
+    }
   },
-  "include": [
-    "./src",
-    "vite-env.d.ts"
-  ]
+  "include": ["./src", "vite-env.d.ts"]
 }
