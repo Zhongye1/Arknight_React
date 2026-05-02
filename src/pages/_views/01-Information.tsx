@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Scrollbar, Autoplay } from 'swiper/modules'
 import { motion, AnimatePresence, type Transition } from 'framer-motion'
 // 引入 framer-motion 处理复杂动效
-import 'swiper/css'
+import 'swiper/swiper.css'
 import 'swiper/css/autoplay'
 import 'swiper/css/scrollbar'
 import PortraitBottomGradientMask from '../../components/PortraitBottomGradientMask'
@@ -284,7 +284,6 @@ function SwiperBody({
         modules={[Autoplay, Scrollbar]}
         autoplay={arknightsConfig.rootPage.INFORMATION.swiper.autoplay ?? true}
         scrollbar={{
-          el: '.swiper-scrollbar-horizontal',
           hide: false,
           draggable: true,
         }}
@@ -323,6 +322,8 @@ export default function Information() {
 
       <SwiperBody {...{ setSwiperIndex, active }} />
 
+      {/* 移除手动创建的滚动条，让Swiper自动处理 */}
+      {/* 
       <div
         className={`w-[61rem] portrait:w-full h-[.5rem] portrait:h-[.375rem] portrait:pr-[5.75rem] absolute portrait:flex top-[56.375rem] portrait:top-[33.125rem] right-0 z-[4] transition-all duration-1000 delay-500
                 ${active ? 'opacity-100' : 'opacity-0'}`}
@@ -337,6 +338,7 @@ export default function Information() {
           <div className="swiper-scrollbar-drag" style={{ backgroundColor: '#18d1ff', borderRadius: 0 }} />
         </div>
       </div>
+      */}
 
       {/* 背景装饰层 */}
       <div

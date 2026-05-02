@@ -2,11 +2,118 @@
 @tailwind components;
 @tailwind utilities;
 
+/* === Arknights Official Fonts === */
+
+@font-face {
+  font-family: Bender-Regular;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('Bender-Regular'),
+    url('/fonts/Bender-Regular.woff2') format('woff2'),
+    url('/fonts/Bender-Regular.woff') format('woff'),
+    url('/fonts/Bender-Regular.ttf') format('truetype'),
+    url('/fonts/Bender-Regular.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: Bender-Bold;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('Bender-Bold'),
+    url('/fonts/Bender-Bold.woff2') format('woff2'),
+    url('/fonts/Bender-Bold.woff') format('woff'),
+    url('/fonts/Bender-Bold.ttf') format('truetype'),
+    url('/fonts/Bender-Bold.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: Oswald-Medium;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('Oswald-Medium'),
+    url('/fonts/Oswald-Medium.woff2') format('woff2'),
+    url('/fonts/Oswald-Medium.woff') format('woff'),
+    url('/fonts/Oswald-Medium.ttf') format('truetype'),
+    url('/fonts/Oswald-Medium.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: Oswald-DemiBold;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('Oswald-DemiBold'),
+    url('/fonts/Oswald-DemiBold.woff2') format('woff2'),
+    url('/fonts/Oswald-DemiBold.woff') format('woff'),
+    url('/fonts/Oswald-DemiBold.ttf') format('truetype'),
+    url('/fonts/Oswald-DemiBold.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: Novecentosanswide-Medium;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('Novecentosanswide-Medium'),
+    url('/fonts/Novecentosanswide-Medium.woff2') format('woff2'),
+    url('/fonts/Novecentosanswide-Medium.woff') format('woff'),
+    url('/fonts/Novecentosanswide-Medium.ttf') format('truetype'),
+    url('/fonts/Novecentosanswide-Medium.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: Novecentosanswide-DemiBold;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('Novecentosanswide-DemiBold'),
+    url('/fonts/Novecentosanswide-DemiBold.woff2') format('woff2'),
+    url('/fonts/Novecentosanswide-DemiBold.woff') format('woff'),
+    url('/fonts/Novecentosanswide-DemiBold.ttf') format('truetype'),
+    url('/fonts/Novecentosanswide-DemiBold.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: Novecentosanswide-Bold;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('Novecentosanswide-Bold'),
+    url('/fonts/Novecentosanswide-Bold.woff2') format('woff2'),
+    url('/fonts/Novecentosanswide-Bold.woff') format('woff'),
+    url('/fonts/Novecentosanswide-Bold.ttf') format('truetype'),
+    url('/fonts/Novecentosanswide-Bold.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: Novecentosanswide-UltraBold;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('Novecentosanswide-UltraBold'),
+    url('/fonts/Novecentosanswide-UltraBold.woff2') format('woff2'),
+    url('/fonts/Novecentosanswide-UltraBold.woff') format('woff'),
+    url('/fonts/Novecentosanswide-UltraBold.ttf') format('truetype'),
+    url('/fonts/Novecentosanswide-UltraBold.eot') format('embedded-opentype');
+}
+
 @layer base {
   html,
   body,
   #root {
     height: 100%;
+    width: 100%;
     margin: 0;
     overflow: hidden;
   }
