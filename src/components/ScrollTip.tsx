@@ -1,7 +1,7 @@
 import { useStore } from '@nanostores/react'
-import { viewIndex } from './store/rootLayoutStore.ts'
+import { viewIndex } from './store/rootLayoutStore'
 import { IconArrow, LogoRhodesIsland } from './SvgIcons'
-import arknightsConfig from '../../arknights.config.tsx'
+import arknightsConfig from '../../arknights.config'
 
 export default function ScrollTip() {
   const $ViewIndex = useStore(viewIndex)

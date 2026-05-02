@@ -1,6 +1,6 @@
 import { useStore } from '@nanostores/react'
-import { isToolBoxOpen } from './store/rootLayoutStore.ts'
-import arknightsConfig from '../../arknights.config.tsx'
+import { isToolBoxOpen } from './store/rootLayoutStore'
+import arknightsConfig from '../../arknights.config'
 import {
   IconBiliBili,
   IconGitHub,

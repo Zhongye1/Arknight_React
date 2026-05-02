@@ -1,4 +1,4 @@
-import { IconArrow } from './SvgIcons.tsx'
+import { IconArrow } from './SvgIcons'
 import { useEffect, useMemo, useState } from 'react'
 
 export default function DocsLeftAsideSwitch() {

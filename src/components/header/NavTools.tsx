@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { IconSocial, IconSound, IconUser } from '../SvgIcons'
 import { useStore } from '@nanostores/react'
-import { isOwnerInfoOpen, isToolBoxOpen } from '../store/rootLayoutStore.ts'
+import { isOwnerInfoOpen, isToolBoxOpen } from '../store/rootLayoutStore'
 import arknightsConfig from '../../../arknights.config'
 
 const ActiveColor = '#18d1ff'

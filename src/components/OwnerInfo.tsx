@@ -1,6 +1,6 @@
 import React from 'react'
-import type { OwnerInfoFooterLink } from '../_types/ArknightsConfig.ts'
-import arknightsConfig from '../../arknights.config.tsx'
+import type { OwnerInfoFooterLink } from '../_types/ArknightsConfig'
+import arknightsConfig from '../../arknights.config'
 import {
   IconArrow,
   IconBiliBili,
@@ -11,7 +11,7 @@ import {
   IconWeibo,
   LogoRhodesIsland,
 } from './SvgIcons'
-import { isOwnerInfoOpen } from './store/rootLayoutStore.ts'
+import { isOwnerInfoOpen } from './store/rootLayoutStore'
 import { useStore } from '@nanostores/react'
 
 function Divider({ children, portraitHidden }: { children: React.ReactNode; portraitHidden?: boolean }) {

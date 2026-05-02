@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState, useMemo, useCallback } from 'react'
 import { useStore } from '@nanostores/react'
-import { viewIndex } from '../store/rootLayoutStore.ts'
-import config from '../../../arknights.config.tsx'
+import { viewIndex } from '../store/rootLayoutStore'
+import config from '../../../arknights.config'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const items = config.rootPage.WORLD!.items

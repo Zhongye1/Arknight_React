@@ -1,9 +1,9 @@
 import React from 'react'
-import { IconArrow } from '../SvgIcons.tsx'
-import config from '../../../arknights.config.tsx'
+import { IconArrow } from '../SvgIcons'
+import config from '../../../arknights.config'
 import { motion } from 'framer-motion'
-// import LogoParticleCanvas from "./DN_logos.tsx";
-import AshParticles from './AshParticles.tsx'
+// import LogoParticleCanvas from "./DN_logos";
+import AshParticles from './AshParticles'
 
 interface WorldItem {
   title: string

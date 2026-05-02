@@ -1,5 +1,5 @@
 import { atom } from 'nanostores'
-import arknightsConfig from '../../../arknights.config.tsx'
+import arknightsConfig from '../../../arknights.config'
 
 export const viewIndex = atom<number>(0)
 

@@ -1,6 +1,6 @@
 import { type RefObject, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { useStore } from '@nanostores/react'
-import { viewIndex } from './store/rootLayoutStore.ts'
+import { viewIndex } from './store/rootLayoutStore'
 import arknightsConfig from '../../arknights.config'
 
 export default function PageTracker() {

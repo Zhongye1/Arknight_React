@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import { useStore } from '@nanostores/react'
-import type { NavbarItem } from '../../_types/ArknightsConfig.ts'
-import { viewIndex } from '../store/rootLayoutStore.ts'
+import type { NavbarItem } from '../../_types/ArknightsConfig'
+import { viewIndex } from '../store/rootLayoutStore'
 
 export default function NavItem({ index, info }: { index: number; info: NavbarItem }) {
   const $viewIndex = useStore(viewIndex)

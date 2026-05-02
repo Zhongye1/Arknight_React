@@ -1,5 +1,5 @@
-import { IconArrow } from './SvgIcons.tsx'
-import GoBackTool from './GoBackTool.tsx'
+import { IconArrow } from './SvgIcons'
+import GoBackTool from './GoBackTool'
 
 function ToTop() {
   return (

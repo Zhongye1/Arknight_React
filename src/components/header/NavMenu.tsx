@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useStore } from '@nanostores/react'
-import type { SubNavigationItem } from '../../_types/SubNavigationItem.ts'
+import type { SubNavigationItem } from '../../_types/SubNavigationItem'
 import { IconArrow, IconBiliBili, IconGitHub, IconSkland, IconTapTap, IconWechat, IconWeibo } from '../SvgIcons'
-import { isNavMenuOpen, viewIndex } from '../store/rootLayoutStore.ts'
-import arknightsConfig from '../../../arknights.config.tsx'
+import { isNavMenuOpen, viewIndex } from '../store/rootLayoutStore'
+import arknightsConfig from '../../../arknights.config'
 
 export default function NavMenu() {
   const LineClassName: React.ComponentProps<'div'>['className'] =

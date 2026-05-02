@@ -1,4 +1,4 @@
-import { IconArrow } from './SvgIcons.tsx'
+import { IconArrow } from './SvgIcons'
 
 export default function GoBackTool({ goBackHref }: { goBackHref?: string }) {
   const base = import.meta.env.BASE_URL

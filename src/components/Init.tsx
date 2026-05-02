@@ -35,21 +35,19 @@ export function Init() {
   }, [])
 
   useEffect(() => {
-    if (!isObserving) return // 如果已经停止观察，不再创建新的观察器
+    if (!isObserving) return
 
     const observer = new PerformanceObserver((list) => {
       list.getEntries().forEach((entry) => {
         if (entry.entryType === 'resource') {
           const resourceName = (entry as PerformanceResourceTiming).name
           if (!loadedResources.has(resourceName)) {
-            // console.log("资源加载成功:", resourceName);
             setLoadedResources((prev) => new Set(prev).add(resourceName))
             incrementProgress()
 
             if (resourceName.endsWith('/images/index-bg.jpg')) {
               isInitialized.set(true)
               stopObserving()
-              // console.log("背景图片加载成功，停止监控");
             }
           }
         }
@@ -59,24 +57,25 @@ export function Init() {
     observerRef.current = observer
     observer.observe({ entryTypes: ['resource'] })
 
-    // 检查已经加载成功的资源
     const checkExistingResources = () => {
       const resources = performance.getEntriesByType('resource')
       resources.forEach((entry) => {
         if (!loadedResources.has(entry.name)) {
-          // console.log("已加载成功的资源:", entry.name);
           setLoadedResources((prev) => new Set(prev).add(entry.name))
           incrementProgress()
           if (entry.name.endsWith('/images/index-bg.jpg')) {
             isInitialized.set(true)
             stopObserving()
-            // console.log("背景图片已加载成功，停止监控");
           }
         }
       })
+      if (!loadedResources.has('/images/index-bg.jpg')) {
+        isInitialized.set(true)
+        stopObserving()
+      }
     }
 
-    checkExistingResources()
+    setTimeout(checkExistingResources, 2000)
 
     return () => {
       if (observerRef.current) {

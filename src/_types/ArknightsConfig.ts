@@ -1,6 +1,6 @@
 import React from 'react'
 import type { AutoplayOptions } from 'swiper/types'
-import type { HeroActionButtonProps, SwiperData } from './RootPageViews.js'
+import type { HeroActionButtonProps, SwiperData } from './RootPageViews'
 
 export type NavbarItem = {
   title: string
