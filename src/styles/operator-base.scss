@@ -97,11 +97,23 @@
   justify-content: center;
 }
 
+.btn-echo {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.647);
+  border-radius: 50%;
+  z-index: 1;
+  transition: all 0.2s ease;
+  opacity: 1;
+  transform: scale(1);
+}
+
 .voice-btn {
   width: 2.5rem;
   height: 2.5rem;
   background: #2f2f2f34;
-  color: #000;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
