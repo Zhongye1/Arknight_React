@@ -147,8 +147,12 @@ export default function Media() {
         <div
           className="w-full h-[50%] relative bg-black overflow-hidden"
           style={{
-            backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0)`,
-            backgroundSize: '40px 40px',
+            backgroundImage: `
+              url('/images/common_mask.png'),
+            `,
+            backgroundSize: 'cover, 40px 40px',
+            backgroundPosition: 'center, 0 0',
+            backgroundRepeat: 'no-repeat, repeat',
           }}
         >
           {/* 背景水印 */}
@@ -196,11 +200,14 @@ export default function Media() {
                     className={`absolute ${area.position} cursor-pointer pointer-events-auto outline-none tap-highlight-transparent group`}
                     onClick={() => setCurrentCat(area.id)}
                   >
-                    {/* 悬停效果*/}
+                    {/* 悬停发光蒙版 */}
                     <div
-                      className={`w-full h-full rounded-2xl transition-colors duration-300 ${
-                        currentCat === area.id ? '' : ''
-                      }`}
+                      className={`w-full h-full rounded-2xl transition-all duration-300
+                        opacity-0 group-hover:opacity-100
+                        bg-gradient-to-br from-cyan-400/10 via-cyan-400/5 to-transparent
+                        border border-cyan-400/0 group-hover:border-cyan-400/40
+                        shadow-[0_0_20px_rgba(34,211,238,0)] group-hover:shadow-[0_0_30px_rgba(34,211,238,0.2)]
+                      `}
                     />
                   </div>
                 ))}

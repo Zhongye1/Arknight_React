@@ -203,7 +203,7 @@ export default function Operator() {
 
           {/* 4. 底部干员选择列表 (Swiper) */}
           <div className="mt-7">
-            <div className=" relative overflow-hidden [list-style:none] p-0 block box-border mx-2 my-0 w-[33.625rem] [mask:linear-gradient(-90deg,_rgba(255,_255,_255,_0),_rgb(255,_255,_255)_2rem)] operator-list-container">
+            <div className=" relative overflow-hidden [list-style:none] p-0 block box-border mx-2 pl-4 my-0 w-[33.625rem] [mask:linear-gradient(-90deg,_rgba(255,_255,_255,_0),_rgb(255,_255,_255)_2rem)] operator-list-container">
               <div className="relative w-full h-full flex [transition-property:transform] box-border [transform:translateZ(0px)]">
                 <Swiper
                   modules={[Scrollbar]}
