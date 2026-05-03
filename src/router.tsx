@@ -24,5 +24,5 @@ export function createRouter(): ReturnType<typeof createBrowserRouter> {
       ErrorBoundary: ErrorPage,
     }
   })
-  return createBrowserRouter(routeWrappers)
+  return createBrowserRouter(routeWrappers, { basename: import.meta.env.BASE_URL })
 }

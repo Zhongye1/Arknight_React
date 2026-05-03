@@ -7,7 +7,7 @@ import { inspectorServer } from '@react-dev-inspector/vite-plugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './',
+  base: '/Arknight_React/',
   plugins: [
     svgr({
       exportAsDefault: true,
