@@ -160,7 +160,7 @@ export function Init() {
               }`}
               style={{ color: commonColor }}
             >
-              <span>© YUE_PLUS</span>
+              <span>© Zhongye</span>
             </div>
             <div className={`flex-grow ${isPortrait ? 'w-full' : ''} pl-[5vw] pr-[5.5vw]`}>
               <div className="relative h-[0.3vw] flex items-center" style={{ backgroundColor: 'transparent' }}>
@@ -183,7 +183,7 @@ export function Init() {
                 <div className={`flex items-center text-[0.8vw]`} style={{ color: commonColor }}>
                   <span>ARKNIGHTS</span>
                   <span className="mx-[0.8vw]">{'//'}</span>
-                  <span>https://github.com/Yue-plus/astro-arknights</span>
+                  <span>https://github.com/Zhongye1/Arknight_React</span>
                 </div>
               </div>
             </div>

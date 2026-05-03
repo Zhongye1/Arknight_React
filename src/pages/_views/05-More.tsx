@@ -31,7 +31,7 @@ const AK_CARDS: AkCard[] = [
     subtitle: 'REPOSITORY',
     img: '/images/05-more/reclamation_algorithm.jpg',
     icon: <img src="/images/05-more/icon-reclamation_algorithm.png" alt="Repository" className="min-w-8 h-8" />,
-    onClick: () => window.open('https://github.com/Yue-plus/astro-arknights', '_blank'),
+    onClick: () => window.open('https://github.com/Zhongye1/Arknight_React', '_blank'),
   },
   {
     id: '03',

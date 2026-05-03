@@ -628,6 +628,7 @@ const ParticleFactory: React.FC<ParticleSystemProps> = ({
         return () => window.removeEventListener('logoImageLoaded', handleImageLoad)
       }
     }
+    return
   }, [activeLabel, imageUrl, logoImgs, particleCanvas])
 
   // 处理 Logo 点击

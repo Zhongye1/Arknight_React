@@ -30,6 +30,7 @@ export default function RootPageViewTemplate({
       const timer = setTimeout(() => setHidden(true), 1000)
       return () => clearTimeout(timer)
     }
+    return
   }, [isActive, isExiting])
 
   let clipPath: string

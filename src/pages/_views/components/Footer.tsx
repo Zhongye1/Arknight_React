@@ -5,13 +5,13 @@ export default function Footer() {
       {/* 顶部链接区 */}
       <div className="flex flex-wrap justify-center gap-4 md:gap-8 text-xs font-bold tracking-wider text-white mb-8">
         <a
-          href="https://github.com/Yue-plus/astro-arknights/blob/main/LICENSE"
+          href="https://github.com/Zhongye1/Arknight_React/blob/main/LICENSE"
           className="hover:text-ark-blue transition-colors"
         >
           License
         </a>
         <span className="text-[#333]">|</span>
-        <a href="https://github.com/Yue-plus/astro-arknights" className="hover:text-ark-blue transition-colors">
+        <a href="https://github.com/Zhongye1/Arknight_React" className="hover:text-ark-blue transition-colors">
           GitHub Repository
         </a>
         <span className="text-[#333]">|</span>
@@ -19,16 +19,12 @@ export default function Footer() {
           Live Demo
         </a>
         <span className="text-[#333]">|</span>
-        <a href="https://docs.astro.build/zh-cn/getting-started/" className="hover:text-ark-blue transition-colors">
-          Astro Framework
-        </a>
-        <span className="text-[#333]">|</span>
-        <a href="https://github.com/Yue-plus" className="hover:text-ark-blue transition-colors">
-          Author: Yue_plus
+        <a href="https://zh-hans.react.dev/learn" className="hover:text-ark-blue transition-colors">
+          React
         </a>
         <span className="text-[#333]">|</span>
         <a href="https://github.com/Zhongye1" className="hover:text-ark-blue transition-colors">
-          Contributor: Zhongye1
+          Author: Zhongye
         </a>
       </div>
 
@@ -50,8 +46,8 @@ export default function Footer() {
         </div>
 
         <div className="text-[10px] text-[#666] flex flex-col md:items-end">
-          <p>Version: 0.0.1 | Based on MIT License</p>
-          <p>Copyright © 2024-present Yue_plus | Shanghai, China</p>
+          <p>Version: 0.2.1 | Based on MIT License</p>
+          <p>Copyright © 2026-present Zhongye | Guangzhou, China</p>
         </div>
       </div>
     </div>

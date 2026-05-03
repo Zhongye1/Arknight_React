@@ -1,6 +1,7 @@
-## Vite-React-TS-Tailwind-Starter
+## React 仿明日方舟官网网页
 
-Choosing a technology stack is a very subjective matter, if you happen to like using `Vite`, `Tailwind`, `TS` and `shadcn ui` and more to build React SPA applications, then give it a try.
+[![Deploy to Cloudflare Pages](https://github.com/Quilljou/react-arknights-website/actions/workflows/deploy.yml/badge.svg)](https://github.com/Quilljou/react-arknights-website/actions/workflows/deploy.yml)
+React 实现的高仿明日方舟官网页
 
 ## Run
 
@@ -53,12 +54,3 @@ src
 
 [Vercel](https://pages.cloudflare.com/) is a good option too，Go to [Vercel](https://vercel.com/new) and link to your Git Repo
 
-Enjoy building.
-
-## Related
-
-- [Next Starter](https://github.com/Quilljou/next-ts-tailwind-starter)
-
-- [React Starter](https://github.com/Quilljou/vite-react-ts-tailwind-starter)
-
-- [Figma Starter](https://github.com/Quilljou/figma-react-tailwind-starter)

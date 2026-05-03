@@ -32,10 +32,10 @@ export default {
       WeChat: 'https://weixin.qq.com/',
       Weibo: 'https://weibo.com/',
       TapTap: 'https://www.taptap.cn/',
-      GitHub: 'https://github.com/Yue-plus/astro-arknights',
+      GitHub: 'https://github.com/Zhongye1/Arknight_React',
     },
     ownerInfo: {
-      name: 'Yue_plus',
+      name: 'Zhongye',
       slogan: '一切不如意终将远去，未来风景独好。',
       footerLinks: [
         { label: 'GitHub', url: 'https://github.com/Yue-plus' },
@@ -84,7 +84,7 @@ export default {
           icon: <IconGitHub className="w-full h-auto pointer-events-none" />,
           label: 'GitHub',
           subLabel: 'Repository',
-          href: 'https://github.com/Yue-plus/astro-arknights',
+          href: 'https://github.com/Zhongye1/Arknight_React',
           className: 'text-white bg-black border-[#333] hover:border-white font-benderBold',
         },
       ],

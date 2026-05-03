@@ -15,14 +15,13 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "declaration": true,
-    "downlevelIteration": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "rootDir": ".",
     "jsx": "react-jsx",
     "moduleResolution": "bundler",
-    "ignoreDeprecations": "6.0",
+    "ignoreDeprecations": "5.0",
     "paths": {
       "@/*": ["./src/*"],
       "src/*": ["./src/*"]

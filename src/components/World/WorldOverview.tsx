@@ -34,6 +34,7 @@ function Item({ title, subTitle, delay, onClick, isExiting, exitingIndex, index 
     } else {
       setIsVisible(false)
     }
+    return
   }, [$viewIndex, delay])
 
   const exitDelay = isExiting ? (index - (exitingIndex ?? 0)) * 50 : 0
