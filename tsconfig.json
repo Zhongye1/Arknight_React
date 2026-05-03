@@ -21,7 +21,8 @@
     "experimentalDecorators": true,
     "rootDir": ".",
     "jsx": "react-jsx",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
+    "ignoreDeprecations": "6.0",
     "paths": {
       "@/*": ["./src/*"],
       "src/*": ["./src/*"]
