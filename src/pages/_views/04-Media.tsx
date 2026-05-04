@@ -4,6 +4,8 @@ import { viewIndex, readyToTouch, isScrollLocked } from '../../components/store/
 import { directions } from '../../components/store/lineDecoratorStore'
 import GalleryDetails from './components/GalleryDetails'
 
+const base = import.meta.env.BASE_URL
+
 // 定义子分类类型
 type Category = 'monster_siren' | 'gallery' | 'operator' | 'video'
 
@@ -21,32 +23,32 @@ const CATEGORIES: CategoryData[] = [
     id: 'monster_siren',
     en: 'MONSTER SIREN',
     cn: '塞壬唱片',
-    logo: '/images/04-media/logo_monster_siren.27beba82.png',
-    activeImg: '/images/04-media/monster_siren_active.8f01230d.png',
+    logo: base + 'images/04-media/logo_monster_siren.27beba82.png',
+    activeImg: base + 'images/04-media/monster_siren_active.8f01230d.png',
     desc: '一个已知或未知的世界\nHTTPS://AK.HYPERGRYPH.COM/',
   },
   {
     id: 'gallery',
     en: 'GALLERY',
     cn: '插画珍藏',
-    logo: '/images/04-media/logo_gallery.08a04a01.png',
-    activeImg: '/images/04-media/gallery_active.d45cfc72.png',
+    logo: base + 'images/04-media/logo_gallery.08a04a01.png',
+    activeImg: base + 'images/04-media/gallery_active.d45cfc72.png',
     desc: '记录大地上的点滴瞬间\nHTTPS://AK.HYPERGRYPH.COM/',
   },
   {
     id: 'operator',
     en: 'OPERATOR',
     cn: '干员档案',
-    logo: '/images/04-media/logo_operator.c6543e50.png',
-    activeImg: '/images/04-media/operator_active.d697ef2d.png',
+    logo: base + 'images/04-media/logo_operator.c6543e50.png',
+    activeImg: base + 'images/04-media/operator_active.d697ef2d.png',
     desc: '罗德岛核心干员机密资料\nHTTPS://AK.HYPERGRYPH.COM/',
   },
   {
     id: 'video',
     en: 'VIDEO',
     cn: '影像资料',
-    logo: '/images/04-media/logo_video.c1de0303.png',
-    activeImg: '/images/04-media/video_active.693c91f3.png',
+    logo: base + 'images/04-media/logo_video.c1de0303.png',
+    activeImg: base + 'images/04-media/video_active.693c91f3.png',
     desc: '泰拉世界的活动影像记录\nHTTPS://AK.HYPERGRYPH.COM/',
   },
 ]
@@ -147,7 +149,7 @@ export default function Media() {
           <div
             className="absolute inset-0 z-[1] pointer-events-none"
             style={{
-              backgroundImage: `url('/images/common_mask.png')`,
+              backgroundImage: `url('${base}images/common_mask.png')`,
               backgroundSize: 'cover, 40px 40px',
               backgroundPosition: 'center, 0 0',
               backgroundRepeat: 'no-repeat, repeat',
@@ -213,7 +215,7 @@ export default function Media() {
 
               {/* 基础桌子贴图 */}
               <img
-                src="/images/04-media/about_terra.44839d14.png"
+                src={base + 'images/04-media/about_terra.44839d14.png'}
                 className="absolute inset-0 w-full h-full object-contain opacity-80"
                 alt="base"
               />

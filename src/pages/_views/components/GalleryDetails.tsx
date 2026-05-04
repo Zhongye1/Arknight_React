@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
+const base = import.meta.env.BASE_URL
+
 // --- 图标组件 ---
 const IconShare = () => (
   <svg
@@ -60,7 +62,7 @@ const galleryData = [
     year: '2026',
     title: 'DST',
     subtitle: '#01#',
-    src: '/images/04-media/gallery/2-1.png',
+    src: base + 'images/04-media/gallery/2-1.png',
     desc: 'VILLAGE OF THE PAST',
   },
   {
@@ -68,7 +70,7 @@ const galleryData = [
     year: '2026',
     title: 'DSA',
     subtitle: '#02#',
-    src: '/images/04-media/gallery/2-2.png',
+    src: base + 'images/04-media/gallery/2-2.png',
     desc: 'FRONTLINE BASE',
   },
   {
@@ -76,7 +78,7 @@ const galleryData = [
     year: '2026',
     title: 'DSE',
     subtitle: '#03#',
-    src: '/images/04-media/gallery/2-3.png',
+    src: base + 'images/04-media/gallery/2-3.png',
     desc: 'RHODES ISLAND',
   },
   {
@@ -84,7 +86,7 @@ const galleryData = [
     year: '2026',
     title: 'DSR',
     subtitle: '#源石与尘土#',
-    src: '/images/04-media/gallery/2-4.png',
+    src: base + 'images/04-media/gallery/2-4.png',
     desc: 'WASTELAND',
   },
   {
@@ -92,7 +94,7 @@ const galleryData = [
     year: '2026',
     title: 'DSF',
     subtitle: '#龙门近卫局#',
-    src: '/images/04-media/gallery/2-5.png',
+    src: base + 'images/04-media/gallery/2-5.png',
     desc: 'LUNGMEN GUARD',
   },
 ]

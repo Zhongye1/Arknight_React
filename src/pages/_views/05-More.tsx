@@ -4,6 +4,8 @@ import { viewIndex, readyToTouch, isFooterVisible } from '../../components/store
 import { directions } from '../../components/store/lineDecoratorStore'
 import Footer from './components/Footer'
 
+const base = import.meta.env.BASE_URL
+
 // --- 类型定义 ---
 interface AkCard {
   id: string
@@ -21,32 +23,34 @@ const AK_CARDS: AkCard[] = [
     id: '01',
     title: '在线体验',
     subtitle: 'ONLINE EXPERIENCE',
-    img: '/images/05-more/integrated_strategies.jpg',
-    icon: <img src="/images/05-more/icon-animation.png" alt="Online Experience" className="min-w-8 h-8" />,
+    img: base + 'images/05-more/integrated_strategies.jpg',
+    icon: <img src={base + 'images/05-more/icon-animation.png'} alt="Online Experience" className="min-w-8 h-8" />,
     onClick: () => (window.location.href = '/BDdraw_DEV/login'),
   },
   {
     id: '02',
     title: '代码仓库',
     subtitle: 'REPOSITORY',
-    img: '/images/05-more/reclamation_algorithm.jpg',
-    icon: <img src="/images/05-more/icon-reclamation_algorithm.png" alt="Repository" className="min-w-8 h-8" />,
+    img: base + 'images/05-more/reclamation_algorithm.jpg',
+    icon: <img src={base + 'images/05-more/icon-reclamation_algorithm.png'} alt="Repository" className="min-w-8 h-8" />,
     onClick: () => window.open('https://github.com/Zhongye1/Arknight_React', '_blank'),
   },
   {
     id: '03',
     title: '相关文档',
     subtitle: 'DOCUMENTATION',
-    img: '/images/05-more/animation.jpg',
-    icon: <img src="/images/05-more/icon-integrated_strategies.png" alt="Documentation" className="min-w-8 h-8" />,
+    img: base + 'images/05-more/animation.jpg',
+    icon: (
+      <img src={base + 'images/05-more/icon-integrated_strategies.png'} alt="Documentation" className="min-w-8 h-8" />
+    ),
     onClick: () => window.open('https://arknights.astro.yue.zone/docs/', '_blank'),
   },
   {
     id: '04',
     title: '作者主页',
     subtitle: 'AUTHOR PROFILE',
-    img: '/images/05-more/terra_historicus.jpg',
-    icon: <img src="/images/05-more/icon-terra_historicus.png" alt="Author Profile" className="min-w-8 h-8" />,
+    img: base + 'images/05-more/terra_historicus.jpg',
+    icon: <img src={base + 'images/05-more/icon-terra_historicus.png'} alt="Author Profile" className="min-w-8 h-8" />,
     onClick: () => window.open('https://github.com/Zhongye1', '_blank'),
   },
 ]

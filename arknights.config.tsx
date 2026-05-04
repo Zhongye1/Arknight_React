@@ -127,55 +127,55 @@ export default {
           name: "KAL'TSIT",
           cnName: '凯尔希',
           cv: '日笠阳子',
-          voice: '/audios/operator/kaltsit_ja.mp3', // 角色语音文件路径
+          voice: base + 'audios/operator/kaltsit_ja.mp3', // 角色语音文件路径
           desc: '罗德岛最高管理者之一，阿米娅的直接辅导者。罗德岛医疗部门的总负责人。',
-          portrait: '/images/02-operator/kaltsit.png',
-          fullbody: '/images/02-operator/kaltsit_full.png',
-          logo: '/images/02-operator/罗德岛logo.png',
+          portrait: base + 'images/02-operator/kaltsit.png',
+          fullbody: base + 'images/02-operator/kaltsit_full.png',
+          logo: base + 'images/02-operator/罗德岛logo.png',
         },
         {
           id: 'amiya',
           name: 'AMIYA',
           cnName: '阿米娅',
           cv: '黑泽朋世',
-          voice: '/audios/operator/amiya_ja.mp3', // 角色语音文件路径
+          voice: base + 'audios/operator/amiya_ja.mp3', // 角色语音文件路径
           desc: '罗德岛的公开领袖，在内部拥有最高执行权。虽然从外表上看仅仅是个不成熟的少女，但她确实深受所有人的信任。',
-          portrait: '/images/02-operator/amiya.png',
-          fullbody: '/images/02-operator/amiya_full.png',
-          logo: '/images/02-operator/罗德岛logo.png',
+          portrait: base + 'images/02-operator/amiya.png',
+          fullbody: base + 'images/02-operator/amiya_full.png',
+          logo: base + 'images/02-operator/罗德岛logo.png',
         },
         {
           id: 'chen',
           name: "CH'EN",
           cnName: '陈',
           cv: '石上静香',
-          voice: '/audios/operator/chen_ja.mp3', // 角色语音文件路径
+          voice: base + 'audios/operator/chen_ja.mp3', // 角色语音文件路径
           desc: '龙门近卫局特别督察组组长。在龙门近卫局服役期间，对维护龙门治安做出了卓越贡献。现作为重装干员加入罗德岛。',
-          portrait: '/images/02-operator/chen.png',
-          fullbody: '/images/02-operator/chen_full.png',
-          logo: '/images/02-operator/龙门logo.png',
+          portrait: base + 'images/02-operator/chen.png',
+          fullbody: base + 'images/02-operator/chen_full.png',
+          logo: base + 'images/02-operator/龙门logo.png',
         },
         {
           id: 'texas',
           name: 'TEXAS',
           cnName: '德克萨斯',
           cv: '田所梓',
-          voice: '/audios/operator/texas_ja.mp3', // 角色语音文件路径
+          voice: base + 'audios/operator/texas_ja.mp3', // 角色语音文件路径
           desc: '企鹅物流员工。单兵作战能力出众。现于罗德岛担任驻勤干员，并协助进行各种保密任务。',
-          portrait: '/images/02-operator/dekesasi.png',
-          fullbody: '/images/02-operator/dekesasi_full.png',
-          logo: '/images/02-operator/企鹅物流logo.png',
+          portrait: base + 'images/02-operator/dekesasi.png',
+          fullbody: base + 'images/02-operator/dekesasi_full.png',
+          logo: base + 'images/02-operator/企鹅物流logo.png',
         },
         {
           id: 'jessica',
           name: 'JESSICA',
           cnName: '杰西卡',
           cv: '广桥凉',
-          voice: '/audios/operator/jessica_ja.mp3', // 角色语音文件路径
+          voice: base + 'audios/operator/jessica_ja.mp3', // 角色语音文件路径
           desc: '黑钢国际正式干员，总是在出发前显得很紧张，但她的同事们知道她会在任务里把每一件事做得足够好。',
-          portrait: '/images/02-operator/jessica.png',
-          fullbody: '/images/02-operator/jessica_full.png',
-          logo: '/images/02-operator/黑钢国际logo.png',
+          portrait: base + 'images/02-operator/jessica.png',
+          fullbody: base + 'images/02-operator/jessica_full.png',
+          logo: base + 'images/02-operator/黑钢国际logo.png',
         },
       ],
     },
@@ -184,42 +184,42 @@ export default {
         {
           title: '源石',
           subTitle: 'ORIGINIUMS',
-          imageUrl: '/images/03-world/originiums.png',
+          imageUrl: base + 'images/03-world/originiums.png',
           description:
             '大地被起因不明的天灾四处肆虐，经由天灾卷过的土地上出现了大量的神秘矿物——「源石」。这种半透明的黑色晶体蕴含着极为庞大的能量，依赖技术的进步，源石被广泛应用于工业、能源与武器制造，推动泰拉文明迈入现代。然而，源石本身也具有极强的致病性，是导致「矿石病」与「感染者」出现的根源。',
         },
         {
           title: '源石技艺',
           subTitle: 'ORIGINIUM ARTS',
-          imageUrl: '/images/03-world/originium_arts.png',
+          imageUrl: base + 'images/03-world/originium_arts.png',
           description:
             '源石技艺是指通过刺激源石内部的能量，进而操控、转化物质或意识的特殊技术。它并非传统意义上的魔法，而是建立在源石能量基础上的高度发达科学应用。感染者因体内源石结晶的存在，通常能更直接、更强力地施展源石技艺，但这也会显著加速矿石病的恶化进程。',
         },
         {
           title: '整合运动',
           subTitle: 'REUNION',
-          imageUrl: '/images/03-world/reunion.png',
+          imageUrl: base + 'images/03-world/reunion.png',
           description:
             '整合运动是一个由感染者组成的准军事化社会运动组织，旨在终结泰拉社会对感染者长期存在的歧视、压迫与不公。他们以极端的方式追求感染者的尊严与力量，主张「感染者应当为自身身份感到骄傲，并积极夺回属于自己的权利」。该组织在切尔诺伯格事变中达到行动高峰，与罗德岛形成直接对抗。',
         },
         {
           title: '感染者',
           subTitle: 'INFECTED',
-          imageUrl: '/images/03-world/infected.png',
+          imageUrl: base + 'images/03-world/infected.png',
           description:
             '因长期接触源石或其工业衍生产物而患上「矿石病」的患者统称为感染者。该病为不治之症，会在患者体内及体表逐渐生成源石结晶，最终导致器官衰竭与死亡。感染者往往拥有比常人更强的源石技艺潜力，却因疾病的传染性与外貌变化遭受严重的社会歧视、隔离甚至迫害。',
         },
         {
           title: '移动城邦',
           subTitle: 'NOMADIC CITY',
-          imageUrl: '/images/03-world/nomadic_city.png',
+          imageUrl: base + 'images/03-world/nomadic_city.png',
           description:
             '由于天灾频繁且难以预测，泰拉大陆的文明发展出独特的「移动城邦」生存方式。这些巨型城市建造在可移动的大型平台之上，能够根据天灾预报整体迁移以规避毁灭性打击。一座完整的移动城邦通常由多个功能城区组成，并以核心城区作为指挥中枢，代表着人类在极端自然环境下的顽强适应能力。',
         },
         {
           title: '罗德岛',
           subTitle: 'RHODES ISLAND',
-          imageUrl: '/images/03-world/rhodes_island.png',
+          imageUrl: base + 'images/03-world/rhodes_island.png',
           description:
             '罗德岛制药公司表面上是一家致力于研究感染者医疗方案的医药研发机构，实际上是处理感染者相关问题最专业的组织之一。以巨型移动陆行舰为基地，罗德岛招募来自世界各地的感染者与非感染者，提供医疗、生活保障与战斗训练，力求寻找矿石病的治疗方法，并为感染者争取更好的生存处境。',
         },

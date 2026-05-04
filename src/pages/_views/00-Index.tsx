@@ -3,6 +3,8 @@ import { useStore } from '@nanostores/react'
 import type { HeroActionButtonProps } from '../../_types/RootPageViews'
 import { viewIndex } from '../../components/store/rootLayoutStore'
 import { directions } from '../../components/store/lineDecoratorStore'
+
+const base = import.meta.env.BASE_URL
 import arknightsConfig from '../../../arknights.config'
 import PortraitBottomGradientMask from '../../components/PortraitBottomGradientMask'
 import { readyToTouch } from '../../components/store/rootLayoutStore'
@@ -39,7 +41,7 @@ export default function Index() {
     if (videoRef.current) {
       if (Hls.isSupported()) {
         const newHls = new Hls()
-        newHls.loadSource('/videos/PV04_landscape/PV04_landscape.m3u8')
+        newHls.loadSource(base + 'videos/PV04_landscape/PV04_landscape.m3u8')
         newHls.attachMedia(videoRef.current)
         newHls.on(Hls.Events.MANIFEST_PARSED, () => {
           setVideoLoaded(true)
@@ -49,7 +51,7 @@ export default function Index() {
         })
         setHls(newHls)
       } else if (videoRef.current.canPlayType('application/vnd.apple.mpegurl')) {
-        videoRef.current.src = '/videos/PV04_landscape/PV04_landscape.m3u8'
+        videoRef.current.src = base + 'videos/PV04_landscape/PV04_landscape.m3u8'
         videoRef.current.addEventListener('loadedmetadata', () => {
           setVideoLoaded(true)
           if ($viewIndex === 0 && $readyToTouch) {

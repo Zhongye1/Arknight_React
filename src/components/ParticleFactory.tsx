@@ -3,6 +3,8 @@
 
 import React, { useRef, useState, useEffect } from 'react'
 
+const base = import.meta.env.BASE_URL
+
 // 全局常量
 const width = 400
 const height = 400
@@ -27,12 +29,12 @@ let scale = 6
 
 // Logo 数据
 const logos = [
-  { label: 'infected', url: '/images/03-world/infected.png' },
-  { label: 'nomadic_city', url: '/images/03-world/nomadic_city.png' },
-  { label: 'originium_arts', url: '/images/03-world/originium_arts.png' },
-  { label: 'originiums', url: '/images/03-world/originiums.png' },
-  { label: 'reunion', url: '/images/03-world/reunion.png' },
-  { label: 'island', url: '/images/rhodes_island.png' },
+  { label: 'infected', url: base + 'images/03-world/infected.png' },
+  { label: 'nomadic_city', url: base + 'images/03-world/nomadic_city.png' },
+  { label: 'originium_arts', url: base + 'images/03-world/originium_arts.png' },
+  { label: 'originiums', url: base + 'images/03-world/originiums.png' },
+  { label: 'reunion', url: base + 'images/03-world/reunion.png' },
+  { label: 'island', url: base + 'images/rhodes_island.png' },
 ]
 
 // 辅助函数
