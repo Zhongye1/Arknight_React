@@ -93,12 +93,7 @@ export default function World() {
   }, [])
 
   return (
-    <div
-      ref={world}
-      className={`w-full h-full absolute top-0 left-0 bg-[#272727] overflow-hidden transition-opacity duration-300 ${
-        isLeaving ? 'opacity-0' : active ? 'opacity-100 visible' : 'opacity-0 invisible'
-      }`}
-    >
+    <div ref={world} className={`w-full h-full absolute top-0 left-0 bg-[#272727] overflow-hidden opacity-100`}>
       {/* 背景层 */}
       <div className="bg-layout absolute inset-0 bg-[#101010] opacity-90 z-[0]" />
 

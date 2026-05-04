@@ -125,11 +125,7 @@ export default function Media() {
 
   return (
     // 外层容器：相对定位，隐藏溢出
-    <div
-      className={`relative w-full h-full overflow-hidden transition-opacity duration-1000 ${
-        active ? 'opacity-100' : 'opacity-0'
-      }`}
-    >
+    <div className={'relative w-full h-full overflow-hidden opacity-100'}>
       {/*
          滚动容器：
          高度为 200% (两屏高度)
@@ -144,19 +140,21 @@ export default function Media() {
         }}
       >
         {/* --- 第一屏：Media 主页面 (高度 50% = 100vh) --- */}
-        <div
-          className="w-full h-[50%] relative bg-black overflow-hidden"
-          style={{
-            backgroundImage: `
-              url('/images/common_mask.png'),
-            `,
-            backgroundSize: 'cover, 40px 40px',
-            backgroundPosition: 'center, 0 0',
-            backgroundRepeat: 'no-repeat, repeat',
-          }}
-        >
+        <div className="w-full h-[50%] relative bg-black overflow-hidden">
+          {/* 背景层 */}
+          <div className="bg-layout absolute inset-0 opacity-90 z-[0]" />
+          {/* 蒙版纹理 */}
+          <div
+            className="absolute inset-0 z-[1] pointer-events-none"
+            style={{
+              backgroundImage: `url('/images/common_mask.png')`,
+              backgroundSize: 'cover, 40px 40px',
+              backgroundPosition: 'center, 0 0',
+              backgroundRepeat: 'no-repeat, repeat',
+            }}
+          />
           {/* 背景水印 */}
-          <div className="absolute bottom-10 left-10 text-[180px] font-black text-white/5 leading-none select-none pointer-events-none">
+          <div className="absolute bottom-10 left-10 text-[180px] font-black text-white/5 leading-none select-none pointer-events-none z-[2]">
             ABOUT TERRA
           </div>
 

@@ -80,11 +80,7 @@ export default function More() {
 
   return (
     // 外层容器：固定 100% 宽高，隐藏溢出
-    <div
-      className={`relative w-full h-full overflow-hidden bg-black transition-opacity duration-1000 ${
-        active ? 'opacity-100' : 'opacity-0'
-      }`}
-    >
+    <div className={'relative w-full h-full overflow-hidden bg-black opacity-100'}>
       {/*
           内容包裹器：包含原来的 MORE 内容 + Footer
           使用 transition-transform 实现平滑的上下滑动效果

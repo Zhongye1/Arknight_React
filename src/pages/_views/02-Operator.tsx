@@ -58,9 +58,7 @@ export default function Operator() {
 
   return (
     <div
-      className={`w-[100vw] max-w-[180rem] h-full absolute top-0 right-0 bottom-0 left-auto transition-all duration-700 ease-in-out bg-layout overflow-hidden ${
-        active ? 'opacity-100 visible' : 'opacity-0 invisible'
-      }`}
+      className={`w-[100vw] max-w-[180rem] h-full absolute top-0 right-0 bottom-0 left-auto bg-layout overflow-hidden opacity-100 visible`}
     >
       {/* 隐藏的音频元素 */}
       <audio ref={audioRef} src={currentOp.voice} onEnded={() => setIsPlaying(false)} />
