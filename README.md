@@ -1,6 +1,5 @@
 ## React 仿明日方舟官网网页
 
-[![Deploy to Cloudflare Pages](https://github.com/Quilljou/react-arknights-website/actions/workflows/deploy.yml/badge.svg)](https://github.com/Quilljou/react-arknights-website/actions/workflows/deploy.yml)
 React 实现的高仿明日方舟官网页
 
 ## Run
@@ -47,10 +46,3 @@ src
 ├── types       # Typescript types
 └── vite-env.d.ts
 ```
-
-## Deploy
-
-[Cloudflare Pages](https://pages.cloudflare.com/) is my first option to deploy React App，follow [this documentation](https://developers.cloudflare.com/pages/framework-guides/deploy-a-react-site/#deploying-with-cloudflare-pages) to deploy your site. Don't forget build directory should choose `dist`
-
-[Vercel](https://pages.cloudflare.com/) is a good option too，Go to [Vercel](https://vercel.com/new) and link to your Git Repo
-
